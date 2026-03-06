@@ -29,7 +29,6 @@ unzip -q rawdata.zip
 # Complete assignment here
 
 # 1. Create a directory named data
-cd newproject
 mkdir data
 
 # 2. Move the ./rawdata directory to ./data/raw (eg. move it into ./data and rename it to raw)
@@ -50,7 +49,7 @@ cp data/raw/*server*.log data/processed/server_logs/
 cp data/raw/*user*.log  data/processed/user_logs/
 cp data/raw/*event*.log data/processed/event_logs/
 
-# 7. For user privacy, remove all files containing IP addresses (files with "ipaddr" in the filename) from ./data/raw and ./data/processed/user_logs
+# 7. For user privacy, remove all files containing IP addresses (files with "ipaddr" in the filename) from ./data/raw and ./data/processed/user_logsgit 
 rm -f data/raw/*ipaddr*
 rm -f data/processed/user_logs/*ipaddr*
 rf -rf ./data
