@@ -52,7 +52,6 @@ cp data/raw/*event*.log data/processed/event_logs/
 # 7. For user privacy, remove all files containing IP addresses (files with "ipaddr" in the filename) from ./data/raw and ./data/processed/user_logsgit 
 rm -f data/raw/*ipaddr*
 rm -f data/processed/user_logs/*ipaddr*
-rf -rf ./data
 
 # 8. Create a file named ./data/inventory.txt that lists all the files in the subfolders of ./data/processed
 find data/processed -type f | sort > data/inventory.txt
